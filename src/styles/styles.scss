@@ -1,0 +1,134 @@
+@import '_variables.scss';
+@import 'https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap';
+@import './_mixins.scss';
+
+@import '../components/Brand/brand.module';
+@import '../components/Brands/brands.module';
+@import '../components/Card/card.module';
+@import '../components/Copyright/copyright.module';
+@import '../components/Footer/footer.module';
+@import '../components/Header/header.module';
+@import '../components/Modal/modal.module';
+@import '../components/Partners/partners.module';
+@import '../components/ProductIcon/productIcon.module';
+@import '../components/ProductPicker/productPicker.module';
+@import '../components/ProductsChoose/ProductsChoose.module';
+@import '../components/Search/search.module';
+@import '../components/Showcase/showcase.module';
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Poppins, Arial, Helvetica, sans-serif;
+    list-style: none;
+}
+
+#root {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+body {
+    min-height: 100vh;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+.promotion {
+
+    color: #fff;
+    flex-direction: column;
+    padding-top: 2.150rem;
+    padding-left: 5.750rem;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, #000000 85.04%), url('../assets/promotion.png') no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+
+    height: 390px;
+    max-width: 100%;
+    mix-blend-mode: normal;
+
+    h2 {
+        max-width: 600px;
+        line-height: 1.8;
+        font-size: 3rem;
+        font-weight: 600;
+    }
+
+    p {
+        font-weight: 600;
+        font-size: 2.250rem;
+    }
+
+    button {
+        background-color: $pink;
+        width: 227px;
+        color: #fff;
+        padding: 1rem;
+        border: none;
+        border-radius: 5px;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}
+
+main {
+    max-width: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+
+    .bars {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+
+        .bar {
+            border-top: 1px solid $gray;
+            width: 400px;
+            padding: 1rem;
+        }
+
+
+        .related-products {
+            color: $pink;
+            font-weight: 700;
+            font-size: 1.875rem;
+
+
+        }
+
+        .seeAll {
+            font-weight: 700;
+            font-size: 0.975rem;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+
+
+
+    }
+
+
+    #partners {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 30px;
+    }
+}

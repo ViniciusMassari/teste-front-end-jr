@@ -1,0 +1,38 @@
+.partnerContainer {
+    display: flex;
+    align-items: start;
+    border-radius: 10px;
+    justify-content: center;
+    flex-direction: column;
+    width: 574px;
+    height: 350px;
+    background-image: url('../../assets/partner.png');
+    color: #fff;
+
+    p {
+        font-weight: 700;
+        font-size: 2.5rem;
+        margin-left: 2.5rem;
+
+    }
+
+    span {
+        margin-left: 2.5rem;
+    }
+
+    button {
+        font-weight: 900;
+        color: #fff;
+        text-transform: uppercase;
+        background: #F71963;
+        margin-top: 2rem;
+        margin-left: 2.5rem;
+        padding: 1rem 1.5rem;
+        border-radius: 10px;
+        border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+}

@@ -1,0 +1,25 @@
+@import '../../styles/variables';
+
+.brands {
+    color: $pink;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+.brandsContainer {
+    display: flex;
+    position: relative;
+
+    &::after {
+        content: '';
+        background-image: url('../../assets/next.png');
+        width: 80px;
+        bottom: 55px;
+        height: 80px;
+        position: absolute;
+        right: 0;
+        background-repeat: no-repeat;
+    }
+}

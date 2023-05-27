@@ -1,0 +1,85 @@
+@import '../../styles/variables';
+
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;900&display=swap');
+
+.modalContainer {
+    position: absolute;
+    font-family: Lato, Arial, Helvetica, sans-serif;
+    width: 769px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    transform: translate(50%, -50%);
+    background-color: #fff;
+    z-index: 999;
+}
+
+
+
+.closeButton {
+    align-self: end;
+    padding: 1rem;
+    margin-right: 10px;
+    color: $gray2;
+
+    &:hover {
+        cursor: pointer;
+        background-color: red;
+        border-radius: 10px;
+    }
+}
+
+
+.modal {
+    display: flex;
+    align-items: start;
+    justify-content: space-around;
+
+
+    img {
+        margin: 0 0;
+    }
+
+
+
+    .productInfo {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: start;
+        align-content: start;
+        flex-direction: column;
+        gap: 20px;
+
+    }
+
+
+
+
+    .name {
+        font-size: 1.250rem;
+        font-weight: 400;
+    }
+
+    .price {
+        font-weight: 900;
+        font-size: 1.250rem;
+    }
+
+    .description {
+        font-weight: 400;
+        font-size: 0.625rem;
+    }
+
+
+    .link {
+        font-weight: 400;
+        font-size: 0.750rem;
+        color: #041E50;
+
+
+        &:hover {
+            cursor: pointer;
+            text-decoration: underline;
+        }
+    }
+}

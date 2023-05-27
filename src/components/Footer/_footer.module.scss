@@ -1,0 +1,127 @@
+@import '../../styles/variables';
+
+
+$footerBackground: #2A2A2A;
+
+.footerContainer {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    justify-content: space-evenly;
+    background-color: $footerBackground;
+
+}
+
+.container {
+    display: flex;
+    justify-content: space-around;
+    margin: 1rem;
+    padding: 0 96px;
+}
+
+.info {
+    display: flex;
+    height: 325px;
+    align-items: start;
+    gap: 40px;
+}
+
+.infoContainer {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    gap: 30px;
+    justify-content: start;
+
+    &>p {
+        color: #fff;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+
+
+
+    .links {
+        color: #fff;
+        font-weight: 300;
+        line-height: 1.9;
+
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.socialMedia {
+    display: flex;
+    gap: 30px;
+    justify-content: space-evenly;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    width: 195px;
+    gap: 10px;
+}
+
+.emailFormContainer {
+    flex: 0 0 360px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 1.5rem;
+    height: 260px;
+    background-color: #fff;
+    border-radius: 10px;
+
+    form {
+        background-color: transparent;
+        box-shadow: none;
+    }
+
+    .registerText {
+        text-transform: uppercase;
+        font-size: 1.125rem;
+        font-weight: 300;
+        color: #3F3F40;
+
+        span {
+            color: #3F3F40;
+            font-weight: 700;
+            font-size: 1.30rem;
+        }
+    }
+
+    p {
+        color: #3F3F40;
+        margin-top: 1rem;
+        font-size: 0.75rem;
+        text-align: center;
+        font-weight: 300;
+    }
+
+    .emailForm {
+        display: flex;
+        gap: 10px;
+
+        input {
+            padding: 0.875rem;
+            border: 1px solid black !important;
+            border-radius: 4px;
+        }
+
+        button {
+            border-radius: 4px;
+            padding: 1rem 1.5rem;
+            background-color: $pink;
+            color: #fff;
+        }
+    }
+
+    hr {
+        width: 100%;
+    }
+}

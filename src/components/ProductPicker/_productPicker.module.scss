@@ -1,0 +1,29 @@
+@import '../../styles/variables';
+
+.relatedProducts {
+    max-width: $container;
+}
+
+.products {
+    display: flex;
+
+    li {
+        border: 1px solid $gray;
+        flex-grow: 1;
+
+        button {
+            text-transform: uppercase;
+            padding: 10px 59px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: transparent;
+            border: none;
+
+            &:hover {
+                cursor: pointer;
+                color: $pink;
+            }
+        }
+    }
+}

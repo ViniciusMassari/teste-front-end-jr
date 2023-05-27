@@ -1,0 +1,33 @@
+@import '../../styles/variables';
+
+
+.productIconContainer {
+    text-align: center;
+    background: none;
+    border: none;
+
+    p {
+        color: $gray2;
+        font-weight: 500;
+    }
+}
+
+
+
+
+.imageContainer {
+    background-color: #F4F4F4;
+    box-shadow: 0px 4px 11px rgba(0, 0, 0, 0.13);
+    border-radius: 10px;
+    display: flex;
+    width: 128px;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    margin-bottom: 22px;
+}
+
+.selectedProduct {
+    @extend .imageContainer;
+    background-color: #fff;
+}
