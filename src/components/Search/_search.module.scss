@@ -38,6 +38,10 @@ $input: #F6F5F2;
     button {
         background-color: transparent;
         border: none;
+
+        &:hover {
+            cursor: pointer;
+        }
     }
 
 

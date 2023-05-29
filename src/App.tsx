@@ -2,9 +2,11 @@ import Brands from './components/Brands';
 import Footer from './components/Footer';
 import Header from './components/Header';
 import Partners from './components/Partners';
+import PartnersContainer from './components/PartnersContainers';
 import ProductPicker from './components/ProductPicker';
 import ProductsChoose from './components/ProductsChoose';
 import Showcase from './components/Showcase';
+import ShowCaseContainer from './components/ShowcaseContainer';
 
 import './styles/styles.css';
 
@@ -19,42 +21,12 @@ function App() {
       </div>
       <main>
         <ProductsChoose />
-        <div className='bars'>
-          <div className='bar'></div>
-          <p className='related-products'>Produtos relacionados</p>
-          <div className='bar'></div>
-        </div>
-        <ProductPicker />
-        <Showcase />
-        <section id='partners'>
-          <Partners />
-          <Partners />
-        </section>
-        <div className='bars'>
-          <div className='bar'></div>
-          <div className='related-products-container'>
-            <p className='related-products'>Produtos relacionados</p>
-            <p className='seeAll'>ver todos</p>
-          </div>
-          <div className='bar'></div>
-        </div>
-        <ProductPicker />
-        <Showcase />
-        <section id='partners'>
-          <Partners />
-          <Partners />
-        </section>
+        <ShowCaseContainer productType={true} />
+        <PartnersContainer />
+        <ShowCaseContainer productType={false} label={'Ver todos'} />
+        <PartnersContainer />
         <Brands />
-        <div className='bars'>
-          <div className='bar'></div>
-          <div className='related-products-container'>
-            <p className='related-products'>Produtos relacionados</p>
-            <p className='seeAll'>ver todos</p>
-          </div>
-          <div className='bar'></div>
-        </div>
-        <ProductPicker />
-        <Showcase />
+        <ShowCaseContainer productType={false} label={'Ver todos'} />
       </main>
 
       <Footer />

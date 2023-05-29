@@ -3,7 +3,9 @@
 .productsIcons {
     max-width: $container;
     display: flex;
+    margin-top: 2rem;
     align-items: center;
     justify-content: space-evenly;
     gap: 30px;
+
 }

@@ -31,7 +31,6 @@ const Header = () => {
         <h1>
           <Logo />
         </h1>
-
         <Search />
         <IconsArea />
       </section>

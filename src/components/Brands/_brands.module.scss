@@ -4,17 +4,27 @@
     color: $pink;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    margin-top: 9rem;
 
+
+    h2 {
+        font-weight: 700;
+        font-size: 30px;
+
+    }
 
 }
 
 .brandsContainer {
     display: flex;
     position: relative;
+    margin: 3.75rem 0 6.5rem 0;
 
     &::after {
         content: '';
         background-image: url('../../assets/next.png');
+        cursor: pointer;
         width: 80px;
         bottom: 55px;
         height: 80px;

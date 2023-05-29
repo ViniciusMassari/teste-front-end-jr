@@ -5,11 +5,14 @@
     text-align: center;
     background: none;
     border: none;
+    margin-bottom: 2rem;
 
     p {
         color: $gray2;
         font-weight: 500;
     }
+
+
 }
 
 
@@ -25,6 +28,14 @@
     justify-content: center;
     padding: 2rem;
     margin-bottom: 22px;
+
+
+    &:hover {
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+
 }
 
 .selectedProduct {

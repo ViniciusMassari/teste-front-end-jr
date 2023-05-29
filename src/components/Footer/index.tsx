@@ -1,3 +1,4 @@
+import { FormEvent } from 'react';
 import Facebook from '../../assets/Facebook';
 import Instagram from '../../assets/Instagram';
 import Youtube from '../../assets/Youtube';
@@ -6,6 +7,9 @@ import Copyright from '../Copyright';
 import styles from './_footer.module.scss';
 
 const Footer = () => {
+  function handleSubmit(event: FormEvent<HTMLFormElement>) {
+    event.preventDefault();
+  }
   return (
     <footer className={styles.footerContainer}>
       <div className={styles.container}>
@@ -50,7 +54,7 @@ const Footer = () => {
             Excepteur sint occaecat cudatat non ent, sunt in culpa qui officia
             lorem ipsum
           </p>
-          <form className={styles.emailForm}>
+          <form className={styles.emailForm} onSubmit={handleSubmit}>
             <input placeholder='Seu email' type='email' />
             <button>Ok</button>
           </form>
